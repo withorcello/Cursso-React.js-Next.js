@@ -1,15 +1,9 @@
-function Lista(){
-    const lista = []
-    for(var i = 1; i <= 10; i++){
-        lista.push(<li>{i} </li>)
-    }
-    return lista
-}
+import Titulo from "../../components/Titulo";
+
 export default function jsx1() {
-    
-    return(
-        <div>
-            {Lista()}
-        </div>
-    )
+  return (
+    <div>
+      <Titulo titulo="Titulo" descricao="Adcionar, Alterar e Excluir." />
+    </div>
+  );
 }
